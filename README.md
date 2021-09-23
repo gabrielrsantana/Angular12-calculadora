@@ -1,9 +1,9 @@
 # Calculadora
 Group project with Soulcode Academy coleagues, the goal is to generate  a scientific calculator with square root,cube,power of two, and PI.
 team: Gabriel Rocha,Guilherme Carvalho,Ricardo Nascimento, Carlos Junior, Wanessa Lane,Weslley.
-#################################################
+
 To Fix: PI is concatenated with other numbers. ex: when pressing a number then PI, resultado on screen become "number3.141515".
-###############################################
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
 
 ## Development server
