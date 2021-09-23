@@ -4,7 +4,6 @@
     box-sizing: border-box;
     /* background-color: burlywood; */
 }
-
 .mostrar {
     display: flex;
     flex-direction: column;
