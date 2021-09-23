@@ -26,7 +26,7 @@ export class CalculadoraComponent implements OnInit {
   limpar(): void {
     this.numero1 = '0';
     this.numero2 = null;
-    this.resultado = null;
+    this.resultado = null; //foi usado null porque no arquivo tsconfig.json,foi mudado "strict": false
     this.operacao = null;
   }
   /**
