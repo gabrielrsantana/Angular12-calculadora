@@ -16,18 +16,17 @@ export class CalculadoraService {
    * Definindo as constantes utilizadas nas operações
    */
 
-   static readonly SOMA: string = '+';
-   static readonly SUBTRACAO: string = '-';
-   static readonly DIVISAO: string = '/';
-   static readonly MULTIPLICACAO: string = 'X';
-   static readonly RAIZQUADRADA: string = '√';
-   static readonly QUADRADO: string = '²';
-   static readonly CUBO: string = '³';
+  static readonly SOMA: string = '+';
+  static readonly SUBTRACAO: string = '-';
+  static readonly DIVISAO: string = '/';
+  static readonly MULTIPLICACAO: string = 'X';
+  static readonly RAIZQUADRADA: string = '√';
+  static readonly QUADRADO: string = '²';
+  static readonly CUBO: string = '³';
 
 
   constructor() { }
 
-  
   /** 
    * Método que calcula as operações matemáticas básicas dado dois números e uma operação
    * @param num1 Number
@@ -36,25 +35,25 @@ export class CalculadoraService {
    * @return Number - O resultado da operação
   */
 
-    raiz(num1: number):number {
-      let resultado: number;
-      resultado = Math.sqrt(num1);
-      num1 = resultado
-      return resultado;
-    }
-    quadrado(num1: number):number {
-      let resultado: number;
-      resultado = num1*num1;
-      return resultado;
-    }
-    cubo(num1: number):number {
-      let resultado: number;
-      resultado = num1*num1*num1;
-      return resultado;
-    }
-   
-   
-    calcular(num1: number, num2: number, operacao: string): number {
+  raiz(num1: number): number {
+    let resultado: number;
+    resultado = Math.sqrt(num1);
+    num1 = resultado
+    return resultado;
+  }
+  quadrado(num1: number): number {
+    let resultado: number;
+    resultado = num1 * num1;
+    return resultado;
+  }
+  cubo(num1: number): number {
+    let resultado: number;
+    resultado = num1 * num1 * num1;
+    return resultado;
+  }
+
+
+  calcular(num1: number, num2: number, operacao: string): number {
     let resultado: number;
 
     switch (operacao) {

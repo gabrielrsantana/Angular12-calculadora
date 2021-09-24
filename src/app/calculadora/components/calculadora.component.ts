@@ -13,7 +13,7 @@ export class CalculadoraComponent implements OnInit {
   private operacao!: string;
 
   constructor(private calculadoraService: CalculadoraService) { }
-
+  //Ao iniciar a classe,zera as variaveis
   ngOnInit() {
     this.limpar()
   }
@@ -88,6 +88,7 @@ export class CalculadoraComponent implements OnInit {
       this.resultado = null;
     }
   }
+  
   raiz(): void {
     this.resultado = this.calculadoraService.raiz(
       parseFloat(this.numero1));
@@ -97,7 +98,6 @@ export class CalculadoraComponent implements OnInit {
     this.resultado = this.calculadoraService.quadrado(
       parseFloat(this.numero1));
     this.numero1 = this.resultado.toString()
-
   }
   cubo(): void {
     this.resultado = this.calculadoraService.cubo(
@@ -112,13 +112,11 @@ export class CalculadoraComponent implements OnInit {
       this.numero2 = this.numero2.toString().slice(0, -1);
     }
   }
-  
+ 
   calcular(): void {
-    
       if (this.numero2 === null) {
         return;
       }
-
       this.resultado = this.calculadoraService.calcular(
         parseFloat(this.numero1),
         parseFloat(this.numero2),
@@ -130,12 +128,9 @@ export class CalculadoraComponent implements OnInit {
     if (this.resultado !== null) {
       return this.resultado.toString();
     }
-
-
     if (this.numero2 !== null) {
       return this.numero2;
     }
-
     return this.numero1;
   }
 
